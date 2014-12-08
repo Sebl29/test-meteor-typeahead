@@ -1,0 +1,18 @@
+<head>
+  <title>test-typeahead</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+<input class="form-control typeahead" name="team" type="text"
+       placeholder="NBA teams"
+       autocomplete="off" spellcheck="off"
+       data-source="nba"/>
+</template>
